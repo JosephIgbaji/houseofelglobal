@@ -42,7 +42,7 @@ export function Partnership() {
                   <p className="font-semibold text-lg">House of El International Network</p>
                 </div>
 
-                <Button variant="outline" className="w-full mt-4 flex items-center gap-2 group bg-transparent">
+                <Button onClick={() => navigator.clipboard.writeText(accountInfo)} variant="outline" className="w-full mt-4 flex items-center gap-2 group bg-transparent">
                   <Copy className="w-4 h-4 group-hover:text-primary transition-colors" />
                   Copy Account Number
                 </Button>
